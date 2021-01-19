@@ -1,0 +1,171 @@
+@import "./reset.scss";
+
+.preventScroll { overflow: hidden; }
+
+.testWrap { width: auto; max-width: 100%; height: auto; margin: auto; }
+
+.testWrap .innerwrap { margin: auto; }
+
+.testWrap .logoGroup { text-align: center; }
+
+.testWrap .logoGroup .logo img { width: 63px; height: auto; }
+
+.testWrap .logoGroup h1 { font-size: 18px; font-weight: 700; }
+
+.testWrap .loginInputForm { padding: 0 15px; }
+
+.testWrap .loginInputForm input[type="text"], .testWrap .loginInputForm input[type="password"] { width: 100%; height: 50px; padding: 0 10px; border: 1px solid #d5d5d5; border-radius: 5px; }
+
+.testWrap .loginInputForm input + input { margin-top: 10px; }
+
+.testWrap .loginButtonGroup { letter-spacing: -7px; padding: 0 15px; }
+
+.testWrap .loginButtonGroup > button, .testWrap .loginButtonGroup > a { display: inline-block; height: 40px; background-color: #eceef2; color: #000; font-size: 13px; }
+
+.testWrap .loginButtonGroup > button + button, .testWrap .loginButtonGroup > a + a { margin-left: 1%; }
+
+.testWrap .button-passid { width: 65%; }
+
+.testWrap .button-join { width: 34%; }
+
+.loginButtonBox { position: relative; /* left:0; bottom:20%; z-index:30; */ margin-top: 40px; }
+
+.loginButtonBox button { border: 0; height: auto; width: 100%; }
+
+.loginButtonBox img { max-width: 100%; }
+
+.boxButton img { max-width: 100%; height: auto; }
+
+.loginTypeBox { position: fixed; z-index: 50; left: 0; bottom: 0; height: auto; transform: translateY(100%); transition: transform 0.5s; }
+
+.loginTypeBox.active { transform: translateY(0); }
+
+.loginTypeBox img { max-width: 100%; height: auto; }
+
+.popopLayer { overflow: hidden; border-radius: 15px 15px 0 0; background-color: #fff; }
+
+.dimBox { position: fixed; display: none; z-index: 40; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.6); transform: opacity 0.5s, display 0.1s; }
+
+.dimBox.active { display: block; opacity: 1; }
+
+.fixBottomMenu { position: fixed; left: 0; bottom: 0; width: 100%; height: auto; }
+
+.fixBottomMenu img { max-width: 100%; }
+
+.body_errorlog { background-color: #424448; }
+
+.errorImg { position: absolute; left: 0; top: 50%; transform: translateY(-50%); width: 100%; height: auto; }
+
+.errorImg img { max-width: 100%; }
+
+.introImg { position: absolute; left: 0; top: 50%; transform: translateY(-50%); width: 100%; height: 100%; overflow: hidden; }
+
+.introImg img { max-width: 100%; }
+
+.fixErrorBottom { position: fixed; left: 0; bottom: 20px; width: 100%; height: auto; }
+
+.fixErrorBottom img { max-width: 100%; height: auto; }
+
+.gnbBox img { max-width: 100%; }
+
+.swiper-slide img { max-width: 100%; }
+
+.bannerType .swiper-slide { width: auto; }
+
+.bannerType .swiper-slide img { max-width: auto; height: 100px; }
+
+.myInfoBox .imgInfo:nth-child(1) { display: block; }
+
+.myInfoBox .imgInfo:nth-child(2) { display: none; }
+
+.myInfoBox.active .imgInfo:nth-child(1) { display: none; }
+
+.myInfoBox.active .imgInfo:nth-child(2) { display: block; }
+
+.myInfoBox .imgInfo img { max-width: 100%; }
+
+.myInfoBox + .myInfoBox { margin-top: 20px; }
+
+.myslider { overflow: hidden; margin-top: 20px; padding: 0 15px; }
+
+.introWrap { padding-top: 30px; }
+
+.introTitle { font-size: 30px; color: #fff; font-weight: 700; text-align: center; line-height: 1.1; }
+
+.introDescription { margin-top: 20px; font-size: 16px; color: #fff; font-weight: 500; text-align: center; line-height: 1.1; }
+
+.loginIntroBox { margin-top: 40px; padding: 0 15px; padding-bottom: 20px; }
+
+.loginIntroBox .buttonLinkPage { display: block; position: relative; width: 100%; height: auto; padding: 15px 15px; box-sizing: border-box; background-color: #fff; border-radius: 8px; }
+
+.loginIntroBox .buttonLinkPage:after { content: ''; position: absolute; display: block; width: 10px; height: 10px; right: 20px; top: 50%; transform: translateY(-50%) rotate(45deg); border-top: 2px solid #000; border-right: 2px solid #000; }
+
+.loginIntroBox .buttonLinkPage .linktit { font-size: 18px; color: #000; line-height: 1.1; font-weight: 500; }
+
+.loginIntroBox .buttonLinkPage .linkdesc { display: none; margin-top: 10px; font-size: 13px; color: #8a8a8a; line-height: 1.1; font-weight: 400; }
+
+.loginIntroBox .buttonLinkPage + .buttonLinkPage { margin-top: 20px; }
+
+.AlarmTypeBox { position: fixed; z-index: 50; left: 0; bottom: 0; height: auto; transform: translateY(100%); transition: transform 0.5s; }
+
+.AlarmTypeBox.active { transform: translateY(0); }
+
+.AlarmTypeBox img { max-width: 100%; height: auto; }
+
+.AlarmTypeBox2 { position: fixed; z-index: 50; left: 0; bottom: 0; height: auto; transform: translateY(100%); transition: transform 0.5s; }
+
+.AlarmTypeBox2.active { transform: translateY(0); transition: transform 0.5s 0s ease; }
+
+.AlarmTypeBox2 img { max-width: 100%; height: auto; }
+
+.boxLoginShowType img { max-width: 100%; height: auto; }
+
+.boxLoginShowType .boxShow { display: none; }
+
+.boxLoginShowType .boxShow.active { display: block; }
+
+.buttonLoginSelect { border: 0; }
+
+.buttonLoginSelect:active, .buttonLoginSelect.active { border: 1px solid #8a8a8a; border-right: 0; border-left: 0; }
+
+.buttonLoginSelect img { max-width: 100%; height: auto; }
+
+.gnbMenuBox .buttonGnb, .gnbMenuBox .buttonAlarm { position: absolute; z-index: 20; top: 13px; width: 50px; height: 50px; background-color: transparent; color: transparent; font-size: 11px; letter-spacing: -5px; }
+
+.gnbMenuBox .buttonAlarm { right: 58px; }
+
+.gnbMenuBox .buttonGnb { right: 0px; }
+
+.body_appcard { background-color: #e5e8f5; }
+
+.body_appcard img { max-width: 100%; height: auto; }
+
+.body_appcard .appcardBottomButton { position: fixed; left: 0; bottom: 0; width: 100%; height: auto; z-index: 30; overflow: hidden; border-radius: 15px 15px 0 0; }
+
+.cardManagerBox { position: fixed; left: 0; bottom: 45px; z-index: 50; width: 100%; height: 90%; transition: transform 0.45s; overflow: hidden; transform: translateY(100%); }
+
+.cardManagerBox .cardManagerButton { position: absolute; left: 0; top: 0; width: 100%; height: 40px; z-index: 51; padding: 0 20px; box-sizing: border-box; transition: padding 0.5s; }
+
+.cardManagerBox .cardManagerButton .buttonCardManager { position: relative; width: 100%; height: 45px; background-color: #5b5b5b; color: #fff; font-size: 14px; padding: 0 15px; border-radius: 20px 20px 0 0; text-align: left; transition: background-color 0.5s color 0.5s border-radius 0.5s; }
+
+.cardManagerBox .cardManagerButton .buttonCardManager:after { content: ''; position: absolute; right: 20px; top: 50%; transform: translateY(-50%) rotate(45deg); display: block; width: 10px; height: 10px; border-top: 1px solid #fff; border-left: 1px solid #fff; }
+
+.cardManagerBox .innerBox { opacity: 0; overflow: hidden; border-radius: 20px 20px 0 0; height: auto; transition: opacity 0.45s; }
+
+.cardManagerBox.active { transition: transform 0.7s 0.4s ease; transform: translateY(10%); border-radius: 20px 20px 0 0; background-color: #f2f4f7; overflow-y: auto; }
+
+.cardManagerBox.active .innerBox { opacity: 1; transition: opacity 0.7s 0.5s ease; }
+
+.cardManagerBox.active .cardManagerButton { padding: 0 0; }
+
+.cardManagerBox.active .cardManagerButton .buttonCardManager { opacity: 1; background-color: #f2f4f7; color: transparent; border-radius: 20px 20px 0 0; transition: background-color 0.5s 0.45s ease; transition: color 0.5s 0.45s ease; transition: border-radius 0.5s; }
+
+.cardManagerBox.active .cardManagerButton .buttonCardManager:after { display: none; }
+
+.cardManagerBox.active .cardManagerButton .buttonCardManager:before { display: block; }
+
+.boxChantBot { position: fixed; z-index: 20; right: 20px; bottom: 50px; width: 50px; height: 50px; }
+
+.boxChantBot img { max-width: 100%; height: auto; }
+
+.body_fixed { overflow: hidden !important; }

@@ -1,0 +1,38 @@
+/* Common */
+body, p, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, th, td, form, fieldset, legend, input, textarea, button, select, div, figure, article, header, nav, footer, section { margin: 0; padding: 0; box-sizing: border-box; word-break: keep-all; word-wrap: break-word; white-space: normal; text-size-adjust: 100%; }
+
+body, input, textarea, select, button, table, th, td { color: #555; font-family: Roboto, notokr; font-weight: 500; font-size: 15px; line-height: 1.5; }
+
+h1, h2, h3, h4, h5, h6 { font-weight: normal; }
+
+img, fieldset, iframe { border: 0; vertical-align: top; }
+
+textarea { -webkit-border-radius: 0; -webkit-appearance: none; resize: none; }
+
+ul, ol { list-style: none; }
+
+em, address { font-style: normal; }
+
+input, select { vertical-align: middle; }
+
+table { width: 100%; border-collapse: separate; border-spacing: 0; }
+
+hr, legend { display: none; }
+
+caption { overflow: hidden; position: static; top: 0; left: 0; width: 0; height: 0; font-size: 0; line-height: 0; }
+
+strong, b { font-weight: 600; }
+
+button { border: none; background: none; cursor: pointer; }
+
+a { text-decoration: none; }
+
+a, button { cursor: pointer; }
+
+a:focus, button:focus, input[type=radio]:focus, input[type=checkbox]:focus { outline: none; }
+
+:-ms-input-placeholder { color: #b2b2b2; font-weight: 400; }
+
+:-moz-placeholder { color: #b2b2b2; font-weight: 400; }
+
+::-webkit-input-placeholder { color: #b2b2b2; font-weight: 400; }
