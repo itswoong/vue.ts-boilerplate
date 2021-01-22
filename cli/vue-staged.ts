@@ -21,6 +21,7 @@ try {
     )
 } catch (e) {
     shell.echo(chalk.red('an unknown error has occurred.'))
+    process.exit(1)
 }
 
 process.exit(0)
