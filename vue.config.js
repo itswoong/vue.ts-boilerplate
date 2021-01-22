@@ -1,8 +1,6 @@
 // eslint-disable-next-line
 const path = require("path");
 
-console.log(path.join(__dirname, 'src/'))
-
 module.exports = {
     configureWebpack: {
         resolve: {

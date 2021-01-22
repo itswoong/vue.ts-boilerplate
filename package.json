@@ -6,8 +6,9 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "postinstall": "husky install",
-    "precommit": "sh precommit.sh"
+    "tsc-staged": "ts-node --project ./tsconfig.base.json ./cli/tsc-staged.ts $PWD",
+    "vue-staged": "ts-node --project ./tsconfig.base.json ./cli/vue-staged.ts",
+    "postinstall": "husky install"
   },
   "dependencies": {
     "core-js": "^3.6.5",
@@ -18,6 +19,7 @@
     "vuex": "^3.4.0"
   },
   "devDependencies": {
+    "@types/shelljs": "^0.8.8",
     "@typescript-eslint/eslint-plugin": "^2.33.0",
     "@typescript-eslint/parser": "^2.33.0",
     "@vue/cli-plugin-babel": "~4.5.0",
@@ -28,6 +30,7 @@
     "@vue/cli-service": "~4.5.0",
     "@vue/eslint-config-prettier": "^6.0.0",
     "@vue/eslint-config-typescript": "^5.0.2",
+    "chalk": "^4.1.0",
     "eslint": "^6.7.2",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-config-prettier": "^7.1.0",
@@ -38,19 +41,22 @@
     "node-sass": "^4.12.0",
     "prettier": "^1.19.1",
     "sass-loader": "^8.0.2",
+    "shelljs": "^0.8.4",
+    "ts-node": "^9.1.1",
     "typescript": "~3.9.3",
-    "vti": "0.0.23",
     "vue-template-compiler": "^2.6.11",
+    "vue-type-check": "^1.1.0",
     "vuex-module-decorators": "^1.0.1"
   },
   "engines": {
     "node": "14"
   },
   "lint-staged": {
-    "*.(js,ts,vue)": [
+    "*.{ts,vue}": [
       "eslint --fix",
       "prettier --write"
     ],
-    "*.vue": "sh diagnostics.sh"
+    "*.ts": "npm run tsc-staged",
+    "*.vue": "npm run vue-staged"
   }
 }

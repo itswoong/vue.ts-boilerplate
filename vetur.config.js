@@ -1,6 +1,6 @@
 module.exports = {
     setting: {
-        "vetur.useWorkspaceDependencies": true,
-        "vetur.experimental.templateInterpolationService": true
+        'vetur.useWorkspaceDependencies': true,
+        'vetur.experimental.templateInterpolationService': true
     }
 }
