@@ -3,7 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
+    "serve": "concurrently \"npm run serve:server\" \"npm run serve:client\"",
+    "serve:client": "vue-cli-service serve",
+    "serve:server": "ts-node --project ./tsconfig.base.json ./server/index.ts",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "tsc-staged": "ts-node --project ./tsconfig.base.json ./cli/tsc-staged.ts $PWD",
@@ -11,6 +13,7 @@
     "postinstall": "husky install"
   },
   "dependencies": {
+    "axios": "^0.21.1",
     "core-js": "^3.6.5",
     "vue": "^2.6.11",
     "vue-class-component": "^7.2.3",
@@ -19,6 +22,7 @@
     "vuex": "^3.4.0"
   },
   "devDependencies": {
+    "@types/json-server": "^0.14.3",
     "@types/shelljs": "^0.8.8",
     "@typescript-eslint/eslint-plugin": "^2.33.0",
     "@typescript-eslint/parser": "^2.33.0",
@@ -31,12 +35,15 @@
     "@vue/eslint-config-prettier": "^6.0.0",
     "@vue/eslint-config-typescript": "^5.0.2",
     "chalk": "^4.1.0",
+    "concurrently": "^5.3.0",
+    "dotenv": "^8.2.0",
     "eslint": "^6.7.2",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-config-prettier": "^7.1.0",
     "eslint-plugin-prettier": "^3.1.3",
     "eslint-plugin-vue": "^6.2.2",
     "husky": "^5.0.6",
+    "json-server": "^0.16.3",
     "lint-staged": "^10.0.0-1",
     "node-sass": "^4.12.0",
     "prettier": "^1.19.1",
