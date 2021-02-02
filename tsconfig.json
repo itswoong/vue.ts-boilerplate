@@ -8,11 +8,17 @@
             "@/*": ["src/*"],
             "@components/*": ["src/components/*"],
             "@pages/*": ["src/pages/*"],
-            "@stores/*": ["src/store/*"]
+            "@services/*": ["src/services/*"],
+            "@stores/*": ["src/stores/*"]
         },
         "lib": ["esnext", "dom", "dom.iterable", "scripthost"]
     },
-    "include": ["src/main.ts"],
+    "include": [
+        "src/**/*.ts",
+        "src/**/*.vue",
+        "tests/**/*.ts",
+        "tests/**/*.vue"
+    ],
     "exclude": ["node_modules"],
     "files": ["src/shims-vue.d.ts"]
 }

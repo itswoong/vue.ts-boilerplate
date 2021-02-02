@@ -1,5 +1,5 @@
 // eslint-disable-next-line
-const path = require("path");
+const path = require('path')
 
 module.exports = {
     configureWebpack: {
@@ -8,7 +8,8 @@ module.exports = {
                 '@': path.join(__dirname, 'src/'),
                 '@components': path.join(__dirname, 'src/components'),
                 '@pages': path.join(__dirname, 'src/pages'),
-                '@stores': path.join(__dirname, 'src/store')
+                '@services': path.join(__dirname, 'src/services'),
+                '@stores': path.join(__dirname, 'src/stores')
             },
             extensions: ['.vue']
         }

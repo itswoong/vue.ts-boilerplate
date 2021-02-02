@@ -1,7 +1,7 @@
-import { makeCards } from './card'
+import { makeCard } from './card'
 
-const cards = makeCards()
+const card = makeCard()
 
 export default {
-    cards
+    card
 }

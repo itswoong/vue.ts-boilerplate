@@ -11,5 +11,6 @@
       "javascript",
       "typescript",
       "vue"
-  ]
+  ],
+  "js/ts.implicitProjectConfig.experimentalDecorators": true
 }
