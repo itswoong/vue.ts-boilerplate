@@ -1,5 +1,3 @@
-/* eslint-disable  @typescript-eslint/no-unused-vars */
-
 import { HttpService, LocaServiceResponse, GET, Path, ResponseAdapter } from './core'
 
 export interface CardResponse {

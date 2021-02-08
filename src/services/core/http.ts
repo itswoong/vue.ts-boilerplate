@@ -1,5 +1,3 @@
-/* eslint-disable  @typescript-eslint/no-explicit-any */
-
 import axios, { AxiosInstance, AxiosRequestConfig, AxiosTransformer, AxiosAdapter } from 'axios'
 import { cacheAdapterEnhancer, throttleAdapterEnhancer } from 'axios-extensions'
 
